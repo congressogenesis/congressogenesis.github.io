@@ -9,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet">
 
 <style>
   :root{
@@ -35,7 +35,7 @@
     margin:0;
     background:var(--navy-950);
     color:var(--ivory);
-    font-family:'Inter', sans-serif;
+    font-family:'Inter', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
@@ -45,14 +45,14 @@
   a{color:inherit;}
 
   h1,h2,h3{
-    font-family:'Poppins', sans-serif;
+    font-family:'Poppins', Arial, Helvetica, sans-serif;
     font-weight:700;
     line-height:1.14;
     margin:0;
     letter-spacing:-0.01em;
   }
   .eyebrow{
-    font-family:'Space Grotesk', monospace;
+    font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif;
     text-transform:uppercase;
     letter-spacing:0.16em;
     font-size:0.74rem;
@@ -93,8 +93,8 @@
   .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; }
   .brand img{ width:38px; height:38px; border-radius:50%; }
   .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
-  .brand-text strong{ font-family:'Poppins', sans-serif; font-weight:600; font-size:1rem; }
-  .brand-text span{ font-family:'Space Grotesk', monospace; font-size:0.62rem; letter-spacing:0.1em; color:var(--muted); text-transform:uppercase; }
+  .brand-text strong{ font-family:'Poppins', Arial, Helvetica, sans-serif; font-weight:600; font-size:1rem; }
+  .brand-text span{ font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.62rem; letter-spacing:0.1em; color:var(--muted); text-transform:uppercase; }
 
   nav.links{ display:flex; gap:28px; align-items:center; }
   nav.links a{
@@ -131,7 +131,7 @@
     display:inline-flex; align-items:center; justify-content:center; gap:9px;
     padding:15px 30px;
     border-radius:100px;
-    font-family:'Space Grotesk', monospace;
+    font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif;
     font-size:0.86rem; font-weight:600; letter-spacing:0.02em;
     text-decoration:none; cursor:pointer; border:none;
     transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, background .25s ease;
@@ -186,7 +186,7 @@
   .fact-row{
     display:flex; flex-wrap:wrap; gap:14px 34px;
     margin-bottom:44px;
-    font-family:'Space Grotesk', monospace;
+    font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif;
   }
   .fact{
     display:flex; align-items:center; gap:10px;
@@ -220,16 +220,16 @@
   }
   .about-copy p{ color:var(--ivory); opacity:0.88; line-height:1.85; font-size:1.03rem; margin:0 0 22px; }
   .about-copy p:first-of-type::first-letter{
-    font-family:'Poppins', sans-serif; font-size:3.6rem; font-weight:500; float:left;
+    font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:3.6rem; font-weight:500; float:left;
     line-height:0.8; margin:8px 12px 0 0; color:var(--pink-soft);
   }
   .quote-card{
     background:var(--panel); border:1px solid var(--panel-line); border-radius:var(--radius);
     padding:34px 30px; position:sticky; top:110px;
   }
-  .quote-card .mark{ font-family:'Poppins', sans-serif; font-size:2.6rem; color:var(--cyan); line-height:1; }
-  .quote-card p{ font-family:'Poppins', sans-serif; font-style:italic; font-size:1.28rem; line-height:1.45; margin:14px 0 20px; color:var(--ivory); }
-  .quote-card .who{ font-family:'Space Grotesk', monospace; font-size:0.76rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
+  .quote-card .mark{ font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:2.6rem; color:var(--cyan); line-height:1; }
+  .quote-card p{ font-family:'Poppins', Arial, Helvetica, sans-serif; font-style:italic; font-size:1.28rem; line-height:1.45; margin:14px 0 20px; color:var(--ivory); }
+  .quote-card .who{ font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.76rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
 
   /* ---------- topics ---------- */
   .topics-grid{
@@ -275,7 +275,7 @@
     overflow:hidden; margin-top:56px;
   }
   .stat{ background:var(--navy-900); padding:36px 28px; }
-  .stat .num{ font-family:'Poppins', sans-serif; font-size:2.5rem; }
+  .stat .num{ font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:2.5rem; }
   .stat .lbl{ color:var(--muted); font-size:0.86rem; margin-top:8px; line-height:1.5; }
   @media (max-width:760px){ .stat-strip{ grid-template-columns:1fr; } }
 
@@ -302,7 +302,7 @@
   .price-card.feat::after{
     content:"MAIS PROCURADO"; position:absolute; top:-13px; left:28px;
     background:linear-gradient(100deg, var(--pink), var(--cyan)); color:var(--navy-950);
-    font-family:'Space Grotesk', monospace; font-size:0.62rem; font-weight:700; letter-spacing:0.08em;
+    font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.62rem; font-weight:700; letter-spacing:0.08em;
     padding:5px 12px; border-radius:100px;
   }
   .price-card h3{ font-size:1.2rem; font-weight:500; margin-bottom:6px; }
@@ -312,8 +312,8 @@
     padding:13px 0; border-top:1px solid var(--panel-line);
   }
   .phase:first-of-type{ border-top:none; }
-  .phase .lbl{ font-family:'Space Grotesk', monospace; font-size:0.76rem; color:var(--muted); }
-  .phase .amt{ font-family:'Poppins', sans-serif; font-size:1.3rem; }
+  .phase .lbl{ font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.76rem; color:var(--muted); }
+  .phase .amt{ font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:1.3rem; }
   .phase.active .amt{ color:var(--cyan-soft); }
   .phase.done .amt, .phase.done .lbl{ opacity:0.4; text-decoration:line-through; }
   .price-card .donate{
@@ -341,7 +341,7 @@
     70%{ box-shadow:0 0 0 9px rgba(224,69,159,0); }
     100%{ box-shadow:0 0 0 0 rgba(224,69,159,0); }
   }
-  .timeline .date{ font-family:'Space Grotesk', monospace; font-size:0.76rem; color:var(--cyan-soft); letter-spacing:0.03em; }
+  .timeline .date{ font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.76rem; color:var(--cyan-soft); letter-spacing:0.03em; }
   .timeline .what{ font-size:1rem; margin-top:4px; color:var(--ivory); }
 
   .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:60px; }
@@ -373,7 +373,7 @@
   .org-actions{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 
   .committee-title{
-    text-align:center; font-family:'Space Grotesk', monospace;
+    text-align:center; font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif;
     font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em;
     color:var(--cyan-soft); margin:0 0 24px;
   }
@@ -385,7 +385,7 @@
     padding:20px 22px;
     background:var(--panel); border:1px solid var(--panel-line); border-radius:14px;
   }
-  .committee .role{ color:var(--cyan-soft); font-family:'Space Grotesk', monospace; font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; }
+  .committee .role{ color:var(--cyan-soft); font-family:'Space Grotesk', 'Trebuchet MS', Arial, sans-serif; font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; }
   .committee .name{ margin-top:8px; font-size:1rem; font-weight:600; color:var(--ivory); }
   @media (max-width:760px){ .committee{ grid-template-columns:1fr; } }
 
